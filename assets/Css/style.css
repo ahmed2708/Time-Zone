@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#a {
+    border-radius: 0%;
+    transition: 1.1s all ease;
+    
+}
+
+#a:hover {
+    transform: scale(1.1);
+    background-color: #FF8B7F;
+}
+
+
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+#section1 {
+    background: #F1F0F3;
+    width: 100%  ;
+}
+
+#s-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+#h1 {
+
+    font-weight: bold;
+}
+
+
+.navbar {
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+#b-1 {
+    color: white;
+    background:#FF351D ;
+    padding: 9px 25px;
+    border-radius: 5%;
+    border: none;
+    transition: background 0.6s; /* تأثير الانتقال عند تغيير الخلفية */
+    position: relative; /* لجعل العناصر الداخلية تعمل بشكل صحيح */
+    overflow: hidden; /* لإخفاء التأثيرات الزائدة */
+}
+
+#b-1::before {
+    content: ''; /* محتوى فارغ */
+    position: absolute;
+    top: 0;
+    left: -100%; /* بدء التأثير من اليسار */
+    width: 100%;
+    height: 100%;
+    background: #4A4A4C; /* اللون الرمادي عند التمرير */
+    transition: left 0.5s; /* تأثير الانتقال عند تغيير موقع التأثير */
+    z-index: 0; /* وضع العنصر خلف النص */
+}
+
+#b-1:hover::before {
+    left: 0; /* تحريك التأثير إلى اليمين عند التمرير بالماوس */
+}
+
+#span {
+    position: relative; /* لوضع النص فوق التأثير */
+    z-index: 1; /* تأكيد أن النص يظهر فوق التأثير */
+    display: inline-block; /* لجعل النص يتصرف ككتلة */
+}
+
+#s-2 {
+    display:flex ;
+    justify-content: space-between;
+}
+
+
+#img2 {
+    text-align: center;
+}
+#img3 {
+    overflow: hidden;
+    display: inline-block;
+    position: relative; 
+}
+
+#img2 h1 {
+    font-size: 3rem;
+}
+
+#img2 p {
+    color: red;
+}
+
+#img3 img {
+    transition: transform 0.3s ease;
+    display: block;
+    transform-origin: center;
+}
+
+#img3 img:hover {
+    transform: scale(1.1);
+}
+
+#img-1 {
+    width: 100%;
+    height: 100%;
+}
+
+
+#s-3 img {
+    transition: filter 0.3s ease;
+}
+
+#s-3 img:hover {
+    filter: brightness(70%);
+}
+
+
+#p {
+    color: red;
+}
+
+
+#img-00{
+    position: relative;
+    display: inline-block;
+}
+
+#img-00 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF351D;
+    color: white;
+    text-align: center;
+    height: 1%;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-00:hover #overlay{
+    opacity: 1;
+    height: 18%;
+}
+
+
+li {
+    list-style-type: none;
+    color: #4A4A4C;
+}
+
+#section7 {
+    background: #FF351D;
+    padding: 2%;
+}
+
+#ss {
+    color: white;
+    font-size: 200%;
+    margin-bottom: 6%;
+}
+
+li h4 {
+    color: white;
+}
+
+#aa {
+    text-decoration: none;
+    cursor:pointer ;
+    color: gray;
+}
+
+#text {
+    color: gray;
+}
+
+#name {
+    color: #FF351D;
+}
+
+#ad {
+    margin-bottom: 20%;
+}
+
+#asd {
+    display: flex;
+
+}
+
+#asd div {
+    margin: 0 1rem;
+}
+
